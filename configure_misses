@@ -1,0 +1,75 @@
+Configure miss: svnversion
+Configure miss: whether this is a VPATH configuration
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: x86_64-generic-linux-gnu-xlf_r
+Configure miss: dummy main to link with Fortran libraries
+Configure miss: cieeefp usability
+Configure miss: cieeefp presence
+Configure miss: cieeefp
+Configure miss: whether isfinite is declared
+Configure miss: whether isnan is declared
+Configure miss: whether -lblas has BLAS
+Configure miss: COIN-OR package Blas
+Configure miss: whether -llapack has LAPACK
+Configure miss: COIN-OR package Lapack
+Configure miss: COIN-OR package Glpk
+Configure miss: COIN-OR package Netlib
+Configure miss: whether this is a VPATH configuration
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: COIN-OR package Glpk
+Configure miss: COIN-OR package SoPlex
+Configure miss: COIN-OR package Netlib
+Configure miss: if user provides library for Cplex
+Configure miss: if user provides library for Mosek
+Configure miss: if user provides library for Xpress
+Configure miss: if user provides library for Gurobi
+Configure miss: cieeefp usability
+Configure miss: cieeefp presence
+Configure miss: cieeefp
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: COIN-OR package Netlib
+Configure miss: if user provides library for AMD
+Configure miss: if user provides library for CHOLMOD
+Configure miss: COIN-OR package Glpk
+Configure miss: COIN-OR package Mumps
+Configure miss: COIN-OR package ASL
+Configure miss: cieeefp usability
+Configure miss: cieeefp presence
+Configure miss: cieeefp
+Configure miss: whether this is a VPATH configuration
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: COIN-OR package OsiCpx
+Configure miss: COIN-OR package OsiGlpk
+Configure miss: COIN-OR package OsiMsk
+Configure miss: COIN-OR package OsiXpr
+Configure miss: COIN-OR package OsiVol
+Configure miss: COIN-OR package OsiDyLP
+Configure miss: cieeefp usability
+Configure miss: cieeefp presence
+Configure miss: cieeefp
+Configure miss: whether this is a VPATH configuration
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: COIN-OR package Netlib
+Configure miss: COIN-OR package Miplib3
+Configure miss: cieeefp usability
+Configure miss: cieeefp presence
+Configure miss: cieeefp
+Configure miss: COIN-OR package DyLP
+Configure miss: COIN-OR package Vol
+Configure miss: COIN-OR package Cpx
+Configure miss: COIN-OR package Glpk
+Configure miss: COIN-OR package Grb
+Configure miss: COIN-OR package Msk
+Configure miss: COIN-OR package Spx
+Configure miss: COIN-OR package Xpr
+Configure miss: COIN-OR package ASL
+Configure miss: if user provides library for Nauty
+Configure miss: whether this is a VPATH configuration
+Configure miss: svnversion
+Configure miss: whether we want to compile in debug mode
+Configure miss: CoinMessageHandler.cpp:823:35: warning: format not a string literal and no format arguments [-Wformat-security]

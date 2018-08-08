@@ -1,0 +1,18 @@
+# This file contains pkgconfig build requirements that get picked up
+# but are undesirable. One entry per line, no whitespace.
+coinasl
+coinblas
+coindatamiplib3
+coindatanetlib
+coinglpk
+coinlapack
+coinmumps
+coinsoplex
+osi-cplex
+osi-dylp
+osi-glpk
+osi-gurobi
+osi-mosek
+osi-soplex
+osi-vol
+osi-xpress

@@ -4,7 +4,7 @@
 #
 Name     : coinmp
 Version  : 1.8.3
-Release  : 1
+Release  : 2
 URL      : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
 Source0  : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
 Summary  : Simple C API for COIN-OR Solvers Clp and Cbc

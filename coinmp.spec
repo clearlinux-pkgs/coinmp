@@ -4,7 +4,7 @@
 #
 Name     : coinmp
 Version  : 1.8.3
-Release  : 3
+Release  : 4
 URL      : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
 Source0  : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
 Summary  : Simple C API for COIN-OR Solvers Clp and Cbc
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562195301
+export SOURCE_DATE_EPOCH=1568069028
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -101,7 +101,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1562195301
+export SOURCE_DATE_EPOCH=1568069028
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/coinmp
 cp Cbc/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/Cbc_LICENSE

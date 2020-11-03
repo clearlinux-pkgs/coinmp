@@ -4,9 +4,9 @@
 #
 Name     : coinmp
 Version  : 1.8.3
-Release  : 5
-URL      : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
-Source0  : http://http.debian.net/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
+Release  : 6
+URL      : https://mirrors.kernel.org/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
+Source0  : https://mirrors.kernel.org/debian/pool/main/c/coinmp/coinmp_1.8.3.orig.tar.gz
 Summary  : Simple C API for COIN-OR Solvers Clp and Cbc
 Group    : Development/Tools
 License  : CPL-1.0 EPL-1.0
@@ -75,20 +75,21 @@ license components for the coinmp package.
 
 %prep
 %setup -q -n CoinMP-1.8.3
+cd %{_builddir}/CoinMP-1.8.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568069028
+export SOURCE_DATE_EPOCH=1604367804
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -98,18 +99,18 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1568069028
+export SOURCE_DATE_EPOCH=1604367804
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/coinmp
-cp Cbc/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/Cbc_LICENSE
-cp Cgl/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/Cgl_LICENSE
-cp Clp/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/Clp_LICENSE
-cp CoinMP/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/CoinMP_LICENSE
-cp CoinUtils/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/CoinUtils_LICENSE
-cp Osi/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/Osi_LICENSE
+cp %{_builddir}/CoinMP-1.8.3/Cbc/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0
+cp %{_builddir}/CoinMP-1.8.3/Cgl/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0
+cp %{_builddir}/CoinMP-1.8.3/Clp/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0
+cp %{_builddir}/CoinMP-1.8.3/CoinMP/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/36830cfb4da96520f326b26f69a9f2dc5f81f971
+cp %{_builddir}/CoinMP-1.8.3/CoinUtils/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0
+cp %{_builddir}/CoinMP-1.8.3/Osi/LICENSE %{buildroot}/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0
 %make_install
 ## install_append content
 rm -rf %{buildroot}/builddir
@@ -471,9 +472,5 @@ rm -rf %{buildroot}/builddir
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/coinmp/Cbc_LICENSE
-/usr/share/package-licenses/coinmp/Cgl_LICENSE
-/usr/share/package-licenses/coinmp/Clp_LICENSE
-/usr/share/package-licenses/coinmp/CoinMP_LICENSE
-/usr/share/package-licenses/coinmp/CoinUtils_LICENSE
-/usr/share/package-licenses/coinmp/Osi_LICENSE
+/usr/share/package-licenses/coinmp/36830cfb4da96520f326b26f69a9f2dc5f81f971
+/usr/share/package-licenses/coinmp/6883fd41bd845520c97b8f6146e8e05bd115bfd0

@@ -1,6 +1,5 @@
-1.8.4+dfsg
+1.8.3
 bzip2-dev
+doxygen
 gfortran
-pkgconfig(cbc)
-pkgconfig(clp)
-pkgconfig(osi-clp)
+pkgconfig(zlib)
